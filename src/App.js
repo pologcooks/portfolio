@@ -20,7 +20,7 @@ function App() {
               </div>
               <div className="col-lg-8">
                 <p>
-                  Hello, my name is Ralph Receninto, I am a technology enthusiast who is eager to learn more about Software Development while utilizing
+                  Hello, my name is Ralph Recinto, I am a technology enthusiast who is eager to learn more about Software Development while utilizing
                   my current experience and knowledge to help build something great. I have experience in full-stack development, including frontend, backend, and database management.
                 </p>
                 <p>
