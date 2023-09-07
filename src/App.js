@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Project from './components/Project';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('About Me');
@@ -54,7 +55,7 @@ function App() {
           </div>
         )}
         {currentSection === 'Contact' && <Contact />}
-        {currentSection === 'Resume' && <div className="bg-light p-4">Resume Content</div>}
+        {currentSection === 'Resume' && <Resume/>}
       </main>
       <Footer />
     </div>
