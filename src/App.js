@@ -18,7 +18,7 @@ function App() {
             <h2>About Me</h2>
             <div className="row">
               <div className="col-lg-4">
-                <img src='/me.jpg' alt="Ralph Recinto" className="img-fluid rounded-circle mb-3" />
+                <img src='/portfolio/me.jpg' alt="Ralph Recinto" className="img-fluid rounded-circle mb-3" />
               </div>
               <div className="col-lg-8">
                 <p>
