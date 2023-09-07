@@ -32,17 +32,23 @@ function App() {
         }
         {currentSection === 'Portfolio' && (
           <div className="row">
-            <div className='col col-6'>
-              <Project title="SVG Logo Creator" link="https://pologcooks.github.io/Challenge_10/" repo="https://github.com/pologcooks/Challenge_10/" />
+            <div className='col col-4'>
+              <Project title="SVG Logo Creator" img={'/svglogo.png'} link="https://pologcooks.github.io/Challenge_10/" repo="https://github.com/pologcooks/Challenge_10/" />
             </div>
-            <div className='col col-6'>
-              <Project title="Readme Generator" link="https://pologcooks.github.io/Challenge_9/" repo="https://github.com/pologcooks/Challenge_9/" />
+            <div className='col col-4'>
+              <Project title="Readme Generator" img={'/readme.png'} link="https://pologcooks.github.io/Challenge_9/" repo="https://github.com/pologcooks/Challenge_9/" />
             </div>
-            <div className='col col-6'>
-              <Project title="Ecommerce API" link="https://pologcooks.github.io/ecommerce-API/" repo="https://github.com/pologcooks/ecommerce-API" />
+            <div className='col col-4'>
+              <Project title="Ecommerce API" img={'/ecommerce_api.png'} link="https://pologcooks.github.io/ecommerce-API/" repo="https://github.com/pologcooks/ecommerce-API" />
             </div>
-            <div className='col col-6'>
-              <Project title="Share Square" link="https://sharesquare-c95734f95f40.herokuapp.com/" repo="https://github.com/DawsonBolen/project-3" />
+            <div className='col col-4'>
+              <Project title="Share Square" img={'/share_square.png'} link="https://sharesquare-c95734f95f40.herokuapp.com/" repo="https://github.com/DawsonBolen/project-3" />
+            </div>
+            <div className='col col-4'>
+              <Project title="Password Generator" img={'/password_generator.png'} link="https://pologcooks.github.io/Challenge_3/" repo="https://github.com/pologcooks/Challenge_3/" />
+            </div>
+            <div className='col col-4'>
+              <Project title="Marvel" img={'/marvel.png'} link="https://andressilva1.github.io/Group-Project/" repo="https://github.com/AndresSilva1/Group-Project" />
             </div>
           </div>
         )}
