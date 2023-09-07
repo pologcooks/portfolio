@@ -3,13 +3,14 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('About Me');
 
   return (
     <div className='app'>
-      <Header setCurrentSection={setCurrentSection} />
+      <Header currentSection={currentSection} setCurrentSection={setCurrentSection} />
       <main className="content container my-4">
         {currentSection === 'About Me' &&
           <div className="container my-5">
@@ -52,7 +53,7 @@ function App() {
             </div>
           </div>
         )}
-        {currentSection === 'Contact' && <div className="bg-light p-4">Contact Content</div>}
+        {currentSection === 'Contact' && <Contact />}
         {currentSection === 'Resume' && <div className="bg-light p-4">Resume Content</div>}
       </main>
       <Footer />

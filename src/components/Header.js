@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from './Navigation';
 
-const Header = ({ setCurrentSection }) => {
+const Header = ({ setCurrentSection,currentSection }) => {
     return (
       <header className="bg-dark text-white p-3">
         <div className="container-fluid">
@@ -10,7 +10,7 @@ const Header = ({ setCurrentSection }) => {
               <h1 className="m-0">Ralph Recinto</h1>
             </div>
             <div className="col-md-6 d-flex justify-content-end align-items-center">
-              <Navigation setCurrentSection={setCurrentSection} />
+              <Navigation currentSection={currentSection} setCurrentSection={setCurrentSection} />
             </div>
           </div>
         </div>
