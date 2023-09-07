@@ -1,6 +1,6 @@
+import './App.css'; 
 import React, { useState } from 'react';
 import Header from './components/Header';
-import Navigation from './components/Navigation';
 import Project from './components/Project';
 import Footer from './components/Footer';
 
@@ -8,9 +8,9 @@ function App() {
   const [currentSection, setCurrentSection] = useState('About Me');
 
   return (
-    <div>
+    <div className='app'>
       <Header setCurrentSection={setCurrentSection}/>
-      <main className="container my-4">
+      <main className="content container my-4">
         {currentSection === 'About Me' && <div className="bg-light p-4">About Me Content</div>}
         {currentSection === 'Portfolio' && (
           <div className="row">
