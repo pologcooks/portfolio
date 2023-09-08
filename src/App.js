@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Project from './components/Project';
 import Footer from './components/Footer';
@@ -8,6 +8,10 @@ import Resume from './components/Resume';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('About Me');
+
+  useEffect(() => {
+    document.title = "Portfolio";
+  }, []);
 
   return (
     <div className='app'>
@@ -34,28 +38,28 @@ function App() {
         }
         {currentSection === 'Portfolio' && (
           <div className="row">
-            <div className='col col-4'>
+            <div className='col col-12 col-md-4'>
               <Project title="SVG Logo Creator" img={'/portfolio/svglogo.png'} link="https://pologcooks.github.io/Challenge_10/" repo="https://github.com/pologcooks/Challenge_10/" />
             </div>
-            <div className='col col-4'>
+            <div className='col col-12 col-md-4'>
               <Project title="Readme Generator" img={'/portfolio/readme.png'} link="https://pologcooks.github.io/Challenge_9/" repo="https://github.com/pologcooks/Challenge_9/" />
             </div>
-            <div className='col col-4'>
+            <div className='col col-12 col-md-4'>
               <Project title="Ecommerce API" img={'/portfolio/ecommerce_api.png'} link="https://pologcooks.github.io/ecommerce-API/" repo="https://github.com/pologcooks/ecommerce-API" />
             </div>
-            <div className='col col-4'>
+            <div className='col col-12 col-md-4'>
               <Project title="Share Square" img={'/portfolio/share_square.png'} link="https://sharesquare-c95734f95f40.herokuapp.com/" repo="https://github.com/DawsonBolen/project-3" />
             </div>
-            <div className='col col-4'>
+            <div className='col col-12 col-md-4'>
               <Project title="Password Generator" img={'/portfolio/password_generator.png'} link="https://pologcooks.github.io/Challenge_3/" repo="https://github.com/pologcooks/Challenge_3/" />
             </div>
-            <div className='col col-4'>
+            <div className='col col-12 col-md-4'>
               <Project title="Marvel" img={'/portfolio/marvel.png'} link="https://andressilva1.github.io/Group-Project/" repo="https://github.com/AndresSilva1/Group-Project" />
             </div>
           </div>
         )}
         {currentSection === 'Contact' && <Contact />}
-        {currentSection === 'Resume' && <Resume/>}
+        {currentSection === 'Resume' && <Resume />}
       </main>
       <Footer />
     </div>
